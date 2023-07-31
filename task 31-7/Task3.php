@@ -12,7 +12,7 @@ for ($i = 0; $i <=30 ; $i++){
 echo $sum;
 
 echo "<br>";
-
+echo "<br>";
 // 2.**  Optional **	Create a script to generate the following pattern, using the nested for loop. 
 
 
@@ -61,8 +61,8 @@ function Pattern($size)
 
 $patternSize = 8;
 Pattern($patternSize);
-
-
+echo "<br>";
+echo "<br>";
 
 // 5.**  Required **	Write a program to calculate and print the factorial of a number using a for loop. The factorial of a number is the product of all integers up to and including that number. 
 
@@ -77,7 +77,7 @@ echo $factorial;
 }
 factorial(5);
 echo "<br>";
-
+echo "<br>";
 
 
 
@@ -99,7 +99,8 @@ function Sequence($n)
 }
 Sequence(10);
 
-
+echo "<br>";
+echo "<br>";
 
 
  
@@ -126,7 +127,6 @@ Sequence(10);
 // 4 5 6
 // 7 8 9 10
 // 11 12 13 14 15 
-echo "<br>";
 
 function Triangle($line) {
     $number = 1;

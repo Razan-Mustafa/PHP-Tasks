@@ -5,10 +5,18 @@
 // 1.	Write a PHP script to see if the specified year is a leap year or not.
 // Sample Input: 2013
 // Sample Output: ‘This year is not a leap year’
+function isLeapYear($year) {
+    if (($year % 4 == 0 && $year % 100 != 0) || $year % 400 == 0) {
+        echo "Year is a leap year";
+    } else {
+        echo "Year is not a leap year";
+    }
+}
 
+isLeapYear(1996);
 
-
-
+echo "<br>";
+echo "<br>";
 
 
 
@@ -26,7 +34,7 @@ function temp($temp){
 }
 temp(27);
 echo "<br>";
-
+echo "<br>";
 
 
 // 3.	Write a PHP script to calculate the sum of the two integers. If the two values are the same, then calculate the triple of their sum.
@@ -42,6 +50,7 @@ if ($n1 == $n2) {
 }
 sum(2 ,2);
 echo "<br>";
+echo "<br>";
 // 4.	Write PHP to check if the sum of the two given numbers equals 30, if the condition is true the return their sum otherwise return false
 // Sample Input: [ firstInteger  =>  10 , secondInteger => 10]
 // Sample Output: ‘false’
@@ -54,7 +63,7 @@ function sum1($n1,$n2) {
     }
     sum1(10 ,20);
     echo "<br>";
-
+    echo "<br>";
 
 // 5.	Write in PHP script to check if the given positive number is a multiple of 3.
 // Sample Input: number = 20
@@ -68,7 +77,7 @@ function check($n1) {
     }
     check(10);
     echo "<br>";
-
+    echo "<br>";
 
 // 6.	Write a PHP script to check if the integer value is in the range of [20-50] inclusive.
 // Sample Input: number = 50
@@ -82,13 +91,14 @@ function check1($n1) {
     }
     check1(50);
     echo "<br>";
-
+    echo "<br>";
 
 // 7.	Write PHP script to find the largest number between the three integers
 // Sample Input: [ 1, 5, 9 ]
 // Sample Output: 9
 $numbers = [ 1, 5, 9 ];
 echo max($numbers);
+echo "<br>";
 echo "<br>";
 // 8.	Write PHP script to calculate the monthly electricity bill according to these rules
  
@@ -123,6 +133,7 @@ function bill($units) {
 }
 echo bill(280);
 echo "<br>";
+echo "<br>";
 
 
 
@@ -140,7 +151,7 @@ function eligible($age) {
     }
     eligible(17);
     echo "<br>";
-
+    echo "<br>";
 
 // 10.	Write php script  to check whether a number is positive, negative or zero
 
@@ -158,7 +169,7 @@ function num2($n) {
     }
     num2(-2);
     echo "<br>";
-
+    echo "<br>";
 
 // 11.	Write php script to make a calculator, the calculator should contain the four main operations 
 
@@ -188,7 +199,7 @@ function divide($num1, $num2) {
 echo add(21, 7);
 
 echo "<br>";
-
+echo "<br>";
 // 12.	Write a PHP to find the grade for the student, after calculating the average of his score in all the subject 
 
 // Sample Inputs: [60,86,95,63,55,74,79,62,50]

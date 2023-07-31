@@ -12,7 +12,7 @@ foreach ($colors as $col) {
 }
 echo "</ul>";
 echo "<br>";
-
+echo "<br>";
 
  
 // 2.	** Required ** $cities= array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid" ); 
@@ -29,7 +29,7 @@ foreach ( $cities as $city=>$countries ) {
     echo "<br>";
 }
 echo "<br>";
-
+echo "<br>";
 // 3.	**  Required ** $color = array (4 => 'white', 6 => 'green', 11=> 'red'); 
 
 // Write a PHP script to display the first element of the above array. 
@@ -37,7 +37,7 @@ echo "<br>";
 $color1 = array (4 => 'white', 6 => 'green', 11=> 'red');
 echo $color1[4];
 echo "<br>";
-
+echo "<br>";
 
  
 // 4.	**  Required ** Write a PHP script to sort the following associative array depending on the key value [asc] :  
@@ -61,7 +61,7 @@ foreach ( $fruits as $alph=>$fruit ) {
     echo "<br>";
 }
 echo "<br>";
-
+echo "<br>";
 
  
 // 5.	**  Optional ** Write a PHP script to calculate and display the average temperature for the recorded reads, also the script should display the list of the five lowest and the five highest temperatures. 
@@ -101,13 +101,9 @@ echo "<br>";
  
 // 8.	**  Required ** Write a PHP script to get the shortest/longest string length from an array. 
 
-// Sample Input:
+// Sample Input:$words =  array("abcd","abc","de","hjjj","g","wer")
 
-//  $words =  array("abcd","abc","de","hjjj","g","wer")
-
-// Expected Output : 
-
-// The shortest array length is 1. The longest array length is 4.
+// Expected Output :The shortest array length is 1. The longest array length is 4.
 
 $words =  array("abcd","abc","de","hjjj","g","wer");
 
@@ -126,7 +122,7 @@ foreach ($words as $word) {
     }
 }
 echo "The shortest array length is $shortestLength. The longest array length is $longestLength.";
-
+echo "<br>";
 
  
  
