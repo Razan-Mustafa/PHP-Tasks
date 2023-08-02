@@ -16,7 +16,7 @@ if (isset($_POST ['user']) && isset($_POST ['email']) &&isset($_POST ['pass'])) 
         
         header("location: calc.php" );
     }else {
-        $_SESSION["massage"] = "invalied data" ;
+        $_SESSION["massage"] = "invalied username/ email or the password incorrect" ;
         header("location: login.php" );
     };
 };

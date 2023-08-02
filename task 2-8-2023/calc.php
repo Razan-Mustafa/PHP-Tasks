@@ -2,16 +2,16 @@
 session_start();
 echo "<h1>Hello ".$_SESSION['user'] . "</h1>";
 include 'function.php';
-    $_SESSION['num1'] = $_GET['n1'];
-    $_SESSION['num2']= $_GET['n2'];
+    $_SESSION['num1'] = $_GET['n1'] ?? " ";
+    $_SESSION['num2']= $_GET['n2'] ?? " ";
 
     $num1 = $_SESSION['num1'];
     $num2 = $_SESSION['num2'];
 
     $result =" ";
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        $num1 = $_GET['n1'];
-        $num2 = $_GET['n2'];
+        $num1 = $_GET['n1'] ?? " ";
+        $num2 = $_GET['n2'] ?? " ";
     
         if (!is_numeric($num1) || !is_numeric($num2)) {
             $_SESSION["mas"] = "Please enter valid numbers for First and Second Numbers";
